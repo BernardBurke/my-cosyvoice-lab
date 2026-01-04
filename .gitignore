@@ -50,3 +50,8 @@ pretrained_models/*
 *_pb2_grpc.py
 *_pb2.py
 *.tar
+# --- Personal Customizations ---
+venv/
+pretrained_models/
+*.wav
+__pycache__/
