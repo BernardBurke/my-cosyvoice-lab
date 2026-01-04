@@ -1,0 +1,100 @@
+ 1965  nvidia-smi 
+ 1966  cd projects/open-whisper/
+ 1967  source venv/bin/activate
+ 1968  /home/ben/projects/personal/mpv_utils/whisp_missing.sh /home/ben/bikini/audio/kokoro_home/biscuithammer/ 100
+ 1969  /home/ben/projects/personal/mpv_utils/whisp_missing.sh /home/ben/bikini/audio/kokoro_home/wordsinthedust/ 100
+ 1970  /home/ben/projects/personal/mpv_utils/whisp_missing.sh /home/ben/bikini/audio/kokoro_home/wordsinthedust/ 100 > /tmp/today/wordsinthedust.sh
+ 1971  /home/ben/projects/personal/mpv_utils/whisp_missing.sh /home/ben/bikini/audio/kokoro_home/biscuithammer/ 100
+ 1972  /home/ben/projects/personal/mpv_utils/whisp_missing.sh /home/ben/bikini/audio/kokoro_home/biscuithammer/ 100 > /tmp/today/buscuit.sh
+ 1973  bash /tmp/today/wordsinthedust.sh 
+ 1974  bash /tmp/today/buscuit.sh 
+ 1975  cd ~
+ 1976  nvidia-smi 
+ 1977  ls projects/kokoro-onnx -alt
+ 1978  ls projects/kokoro-onnx/kokoro_tts_safeseg.py 
+ 1979  git status
+ 1980  cd projects/kokoro
+ 1981  ls
+ 1982  cd ..
+ 1983  cd kokoro-onnx/
+ 1984  ls
+ 1985  git status
+ 1986  git add .
+ 1987  git commit -m "finally got the line 510 error fixed"
+ 1988  git push
+ 1989  ls
+ 1990  bi kokoro_tts_v2.py
+ 1991  vi kokoro_tts_v2.py
+ 1992  git statis
+ 1993  git status 
+ 1994  git add .
+ 1995  cd ~
+ 1996  ls Videos/
+ 1997  ls Videos/ -alt
+ 1998  scp /media/Tubeclips/Dave\ Collum\ 251231\ OTC\ Forensic\ Exploration\ public.mp4 baggins.local:
+ 1999  scp /media/Tubeclips/Dave\ Collum\ 251231\ OTC\ Forensic\ Exploration\ public.mp4 baggins:
+ 2000  sudo ls
+ 2001  bash projects/enviro_installers/setup_cosyvoice.sh 
+ 2002  vi result.txt
+ 2003  wc -l result.txt
+ 2004  more result.txt
+ 2005  tail  -n 100 result.txt
+ 2006  ls projects/personal/ -alt
+ 2007  /home/ben/projects/personal/CosyVoice-Tool/run_webui.sh
+ 2008  cd projects/personal/CosyVoice-Tool/
+ 2009  ls
+ 2010  source venv/bin/activate
+ 2011  /home/ben/projects/personal/CosyVoice-Tool/run_webui.sh
+ 2012  pip install grpcio --only-binary=:all:
+ 2013  /home/ben/projects/personal/CosyVoice-Tool/run_webui.sh
+ 2014  pip install gradio
+ 2015  pip install -r requirements.txt
+ 2016  pip install gradio
+ 2017  pip install openai-whisper pydub librosa
+ 2018  /home/ben/projects/personal/CosyVoice-Tool/run_webui.sh
+ 2019  sed -i '/grpcio/d' requirements.txt
+ 2020  pip install -r requirements.txt
+ 2021  pip install torchaudio==2.3.1 --index-url https://download.pytorch.org/whl/cu121
+ 2022  /home/ben/projects/personal/CosyVoice-Tool/run_webui.sh
+ 2023  vi test_instruct.py
+ 2024  python3 test_instruct.py 
+ 2025  ls
+ 2026  ls -atlh
+ 2027  rm test_instruct.py
+ 2028  vi test_instruct.py
+ 2029  python3 test_instruct.py 
+ 2030  ls *.wav
+ 2031  mp result_happy.wav --volume=100
+ 2032  mpv result_happy.wav --volume=100
+ 2033  ls
+ 2034  ls .gitignore 
+ 2035  vi .gitignore 
+ 2036  cat <<EOT >> .gitignore
+
+# --- Personal Customizations ---
+venv/
+pretrained_models/
+*.wav
+__pycache__/
+EOT
+
+ 2037  git status
+ 2038  git add .
+ 2039  git commit -m "Setup complete: Added local fixes and start scripts"
+ 2040  git remote set-url origin https://github.com/BernardBurke/my-cosyvoice-lab.git
+ 2041  git push -u origin main
+ 2042  git remote set-url origin git@github.com/BernardBurke/my-cosyvoice-lab.git
+ 2043  git push -u origin main
+ 2044  git remote set-url origin git@github.com-personal/BernardBurke/my-cosyvoice-lab.git
+ 2045  git push -u origin main
+ 2046  cd ..
+ 2047  ls
+ 2048  cd file_sys_stash/
+ 2049  git remove -v
+ 2050  git remote -v
+ 2051  cd ..
+ 2052  cd CosyVoice-Tool/
+ 2053  ls
+ 2054  git remote set-url origin github.com-personal:BernardBurke/my-cosyvoice-lab
+ 2055  git push -u origin main
+ 2056  history | tail -n 100 > setup_history_raw.txt
